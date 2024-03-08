@@ -2,6 +2,7 @@ import express from "express"; //khởi tạo bằng express
 
 const app = express();
 app.get(`/api/products`, (req, res) => {
+  //request.url , request.method , request.handle
   const data = [
     { id: 1, name: "khai", tuoi: 19 },
     { id: 2, name: "dai", tuoi: 49 },
