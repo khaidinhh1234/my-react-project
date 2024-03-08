@@ -1,0 +1,95 @@
+ /*list*/
+ <div className="container">
+      <h1> Danh sách sản phẩm</h1>
+      <button to="" className="btn btn-info">
+        {" "}
+        thêm
+      </button>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Tên</th>
+            <th>Ảnh</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Mô tả</th>
+            <th>admin</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              
+              <td>
+                <button
+                  className="btn btn-danger "
+                >
+                  Xóa
+                </button>
+                <button className="btn btn-primary m-lg-1">Cập nhật</button>
+              </td>
+            </tr>
+      
+        </tbody>
+      </table>
+    </div>
+
+/*Thêm sản phẩm*/
+<div className="container">
+      <h1>Thêm sản phẩm </h1>
+      <form action="">
+        <div>
+          <label htmlFor="form-control">Tên sản phẩm</label>
+          <input
+            type="text"
+            className="form-control mt-2 "
+            placeholder="Tên sản phẩm"
+          />
+          <span className="text-danger"> Vui lòng nhập tên sản phẩm </span>
+        </div>
+        <div>
+          <label htmlFor="form-control">Tên sản phẩm</label>
+          <input
+            type="text"
+            className="form-control mt-2 "
+            placeholder="Tên sản phẩm"
+          />
+        
+        </div>
+                <button type="submit" className="btn btn-primary mt-2-2">Cập nhật</button>
+      </form>
+    </div>
+
+
+
+
+    //sig/
+
+        <div>
+      <div className="container">
+        <h1>Đăng Nhập </h1>
+        <form action="">
+          <div>
+            <label htmlFor="form-control">tài khoản</label>
+            <input
+              type="email"
+              className="form-control mt-2 "
+              placeholder="email.com"
+            />
+          </div>
+          <div>
+            <label htmlFor="form-control">Mật khẩu</label>
+            <input
+              type="password"
+              className="form-control mt-2 "
+              placeholder="****"
+            />
+          </div>
+
+          <button type="submit" className="btn btn-primary mt-2">
+            Đăng Nhập
+          </button>
+        </form>
+      </div>
+    </div>

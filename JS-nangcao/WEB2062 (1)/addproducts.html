@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thêm sản phẩm</h1>
+      <form action="" method="post" id="form-add">
+        <div class="form-group">
+          <label for="name" class="form-control-label mb-2">Tên sản phẩm</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            id="name"
+            aria-describedby="helpId"
+            placeholder="Tên sản phẩm"
+          />
+        </div>
+        <div class="form-group">
+          <label for="price" class="form-control-label mb-2"
+            >Giá sản phẩm</label
+          >
+          <input
+            type="number"
+            class="form-control mb-2"
+            id="price"
+            aria-describedby="helpId"
+            placeholder="Giá sản phẩm"
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-info">Thêm</button>
+      </form>
+    </div>
+    <script src="add.js"></script>
+  </body>
+</html>

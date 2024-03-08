@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "name": "Sản phẩm 321",
+      "price": "4530000",
+      "id": "1"
+    },
+    {
+      "name": "Sản phẩm 129",
+      "price": "1990000",
+      "id": "2"
+    },
+    {
+      "name": "Sản phẩm 4",
+      "price": "40000",
+      "id": "3"
+    },
+    {
+      "name": "khai",
+      "price": "123",
+      "id": "5215"
+    },
+    {
+      "id": "ab14",
+      "name": "1234",
+      "price": "1234"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": 123456
+    }
+  ]
+}

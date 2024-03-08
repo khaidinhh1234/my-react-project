@@ -1,0 +1,12 @@
+//npm i json-server
+//create a db.json //tạo file db.json 
+
+//json-server --watch db.json
+
+
+tailwind 
+npx tailwindcss -i ./src/tailwind.css -o ./src/tailwind.css --watch  
+
+$ npm i react-toastify
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';

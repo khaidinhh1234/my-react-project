@@ -1,0 +1,111 @@
+{
+  "sanphams": [
+    {
+      "id": "1",
+      "name": "NHỮNG KỶ NGUYÊN CỦA TAYLOR SWIFT",
+      "image": "http://localhost/D%e1%bb%b0%20%c3%81N%201/CinePass%20h%e1%bb%87%20th%e1%bb%91ng%20b%c3%a1n%20v%c3%a9%20s%e1%bb%91%201%20Vi%e1%bb%87t%20Nam/Trang%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng/imgavt/700x1000_18_.jpg",
+      "tl": "123",
+      "dateph": "2023-12-17"
+    },
+    {
+      "id": "351f",
+      "name": "Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng",
+      "image": "http://localhost/D%e1%bb%b0%20%c3%81N%201/CinePass%20h%e1%bb%87%20th%e1%bb%91ng%20b%c3%a1n%20v%c3%a9%20s%e1%bb%91%201%20Vi%e1%bb%87t%20Nam/Trang%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng/imgavt/Bi%E1%BB%87t%20%C4%91%E1%BB%99i%20Marvels.jpg",
+      "tl": "121",
+      "dateph": "2024-01-07"
+    },
+    {
+      "id": "5834",
+      "name": "THIẾU NIÊN VÀ CHIM DIỆC",
+      "image": "http://localhost/D%e1%bb%b0%20%c3%81N%201/CinePass%20h%e1%bb%87%20th%e1%bb%91ng%20b%c3%a1n%20v%c3%a9%20s%e1%bb%91%201%20Vi%e1%bb%87t%20Nam/Trang%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng/imgavt/vietnam_-_poster_-_15.12.2023_1_.jpg",
+      "tl": "123",
+      "dateph": "2023-12-14"
+    },
+    {
+      "id": "d63b",
+      "name": "NGƯỜI VỢ CUỐI CÙNG",
+      "image": "http://localhost/D%e1%bb%b0%20%c3%81N%201/CinePass%20h%e1%bb%87%20th%e1%bb%91ng%20b%c3%a1n%20v%c3%a9%20s%e1%bb%91%201%20Vi%e1%bb%87t%20Nam/Trang%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng/imgavt/nguoivo.jpg",
+      "tl": "123",
+      "dateph": "2023-12-08"
+    },
+    {
+      "id": "d809",
+      "name": "Kỳ án trên băng",
+      "image": "http://localhost/D%E1%BB%B0%20%C3%81N%201/CinePass%20h%E1%BB%87%20th%E1%BB%91ng%20b%C3%A1n%20v%C3%A9%20s%E1%BB%91%201%20Vi%E1%BB%87t%20Nam/Trang%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng/imgavt/K%E1%BB%B3%20%C3%A1n%20tr%C3%AAn%20%C4%91%E1%BB%93i%20tuy%E1%BA%BFt.jpg",
+      "tl": "120",
+      "dateph": "2024-01-19"
+    }
+  ],
+  "menus": [
+    {
+      "id": "1",
+      "lable": "Trang chủ",
+      "path": "/admin",
+      "icon": "folder-outline"
+    },
+    {
+      "id": "2",
+      "lable": "Danh sách Phim",
+      "path": "/admin/sanphams",
+      "icon": "camera-outline"
+    },
+    {
+      "id": "3",
+      "lable": " Thể Loại Phim",
+      "path": "/admin/loaisps",
+      "icon": "film-outline"
+    }
+  ],
+  "loaisps": [
+    {
+      "id": "3",
+      "name": "Kinh Dị"
+    },
+    {
+      "id": "6",
+      "name": "Ngôn Tình"
+    },
+    {
+      "id": "d4af",
+      "name": "Hài"
+    },
+    {
+      "id": "1300",
+      "name": "Ca Nhạc"
+    },
+    {
+      "name": "Cổ Trang",
+      "id": "38fdAm1"
+    },
+    {
+      "name": "Hoạt Hình ",
+      "id": "heBkOrv"
+    },
+    {
+      "name": "123344",
+      "id": "6EYdfoy"
+    }
+  ],
+  "users": [
+    {
+      "email": "khaisoai@gmail.com",
+      "password": "$2a$10$YewUITXDUQLRXZCwBOwOpuzA03A4cI/rp1A7wxA7Ge8EmuOLkEqa.",
+      "id": 1
+    },
+    {
+      "email": "khaisoai2@gmail.com",
+      "password": "$2a$10$b6312hSa/4Y5Kuh87JRPCubMR584Bbqdyy1e6Ck1md0i3pQuTgK5.",
+      "id": 1
+    },
+    {
+      "email": "khai2@gmail.com",
+      "password": "$2a$10$dlSbG9jvn84T8BlSOgdOBOiteUjSCeJ8EaBW1Z21r0iFa4Bi/1sJK",
+      "id": 3
+    },
+    {
+      "email": "admin@fpt.vn",
+      "password": "$2a$10$/RFIxIa3gNZI43WHY4CSnOX3BBLGpijNpMrlxo5NK01v4pesOiZ9i",
+      "id": 4
+    }
+  ]
+}

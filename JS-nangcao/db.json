@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "khai",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
+      "gia": 120000
+    }
+  ],
+  "sanphams": [
+    {
+      "id": "1",
+      "name": "NHỮNG KỶ NGUYÊN CỦA TAYLOR SWIFT",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
+      "tl": "123",
+      "dateph": "2023-12-17"
+    },
+    {
+      "name": "khai123",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180123",
+      "tl": "234122",
+      "dateph": "2024-02-21",
+      "id": "1389"
+    }
+  ],
+  "menus": [
+    {
+      "id": "1",
+      "label": "Trang chủ",
+      "path": "./index.html",
+      "icon": ""
+    },
+    {
+      "id": "2",
+      "label": "sản Phẩm",
+      "path": "./product/index.html",
+      "icon": ""
+    },
+    {
+      "id": "3",
+      "label": "Thể loại",
+      "path": "./sanphams/sanpham.html",
+      "icon": ""
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456"
+    }
+  ]
+}

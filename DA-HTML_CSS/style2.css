@@ -1,0 +1,132 @@
+body {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+.header {
+  max-width: 1440px;
+  margin: auto;
+  margin-button: 20px;
+}
+.pro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro {
+  margin: 2vw 4vw 0 4vw;
+}
+.pro-menu ul {
+  display: flex;
+  list-style: none;
+}
+.pro-menu ul li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 0 2vw;
+}
+.pro-icon {
+  display: flex;
+  padding: 20px;
+}
+.pro-icon a {
+  font-size: 20px;
+  margin: 0 40px 0 0;
+}
+.banner {
+  background-image: url(./img/banner1.png);
+  height: 500px;
+  width: 1440px;
+}
+.banner h1 {
+  text-align: center;
+  padding-top: 10vw;
+  font-size: 48px;
+}
+.banner h3 {
+  text-align: center;
+  padding: 5vw 0;
+}
+.main {
+  max-width: 1236px;
+  margin: auto;
+}
+.text p {
+  font-size: 40px;
+  margin: 40px 0 15px 0;
+}
+hr.hr {
+  border: 1.5px solid black;
+}
+.sanpham {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 30px 0;
+}
+.sanpham-sp1 {
+  width: 284px;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sanpham img {
+  width: 284px;
+  height: 300px;
+  margin-bottom: 1px;
+}
+
+.sanpham-sp1-noidung h3 {
+  font-size: 24px;
+  padding-left: 20px;
+}
+.sanpham-sp1-noidung p,
+span {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.sanpham-sp1-noidung-add {
+  background-color: rgba(110, 110, 110, 0.5);
+  /* background-color: #6e6E6F;
+  opacity: 0.5; */
+}
+.sanpham-sp1-noidung-add a {
+  color: #b88e2f;
+  text-decoration: none;
+  padding: 15px;
+}
+.sanpham-sp1-noidung-add-button {
+  background-color: white;
+  width: 202px;
+  height: 48px;
+
+  display: grid;
+  margin-top: 10vw;
+
+  justify-content: center;
+  text-align: center;
+  border: 1px #ffffff;
+}
+.sanpham-sp1-noidung-add {
+  display: grid;
+  justify-content: center;
+  /* text-align: center; */
+  width: 284px;
+  height: 460px;
+  position: absolute;
+  bottom: -777px;
+}
+
+.sanpham-sp1-noidung-add-share {
+  display: flex;
+  margin-bottom: 10vw;
+}
+.sanpham-sp1-noidung-add-share p {
+  padding: 0 10px;
+  color: #ffffff;
+}
+.sanpham-sp1:hover .sanpham-sp1-noidung-add {
+  bottom: 0;
+}
