@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "khai",
+      "tuoi": 19
+    },
+    {
+      "id": "2",
+      "name": "hai",
+      "tuoi": 19
+    },
+    {
+      "name": "khaiedit",
+      "tuoi": 2004,
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "huy",
+      "tuoi": 19
+    },
+    {
+      "id": "5",
+      "name": "nam",
+      "tuoi": 19
+    },
+    {
+      "id": "ba11",
+      "name": "KHAI",
+      "tuoi": 1111
+    }
+  ]
+}
