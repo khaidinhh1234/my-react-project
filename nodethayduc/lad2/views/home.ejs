@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid  bg-black">
+
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg ">
+       
+         
+            
+              <ul class="navbar-nav ms-5 ">
+                <li class="nav-item flex-md-row   ">
+                  <a class="nav-link active fs-5 text-warning " aria-current="page" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 text-warning" aria-current="page" href="#">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 text-white " aria-current="page" href="#">Thêm sản phẩm</a>
+                </li>
+        
+               
+              </ul>
+            
+          </div>
+        </nav>
+      </div>
+      <h1 class="mt-5 text-center ">Chào mừng đến chúng tôi</h1>
+      <% if ( thu ){ %>
+          <h3 class="mt-5 text-center ">Hôm nay là Cuối Tuần</h3>
+       <% } else { %>
+        <h3 class="mt-5 text-center ">Hôm nay là <%=thu %></h3>
+      <% } %>
+    </div>
+  </body>
+</html>

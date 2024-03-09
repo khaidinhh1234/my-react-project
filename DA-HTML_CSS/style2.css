@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   font-family: Roboto;
+  margin: auto;
 }
 .header {
   max-width: 1440px;

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Chào mừng <%=username%> đến với chúng tôi</h1>
+    <% if ( username ==="khaidinhh"){ %>
+    <p>dz</p>
+    <% } %>
+    <ul>
+      <% for (let product of products) {%>
+      <li><%=product.name %> :<%=product.price %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
