@@ -1,0 +1,90 @@
+$font-poppin: "Poppins", sans-serif;
+@mixin grid($colum, $gap) {
+  display: grid;
+  grid-template-columns: repeat($colum, 1fr);
+  grid-gap: $gap;
+}
+
+body {
+  font-family: $font-poppin;
+}
+.container {
+  max-width: 1268px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  &-inner {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+  }
+  &-inner > * {
+    width: 33.333333%;
+  }
+  &-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-items > * {
+    margin-left: 20px;
+  }
+}
+.main-menu {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &_link {
+    padding: 10px 35px;
+    text-decoration: none;
+  }
+  &_link:hover {
+    background-color: rgb(106, 221, 221);
+    color: rgb(0, 0, 0);
+  }
+}
+/// Banner
+.banner {
+  &__img {
+    width: 100%;
+  }
+}
+///NEW
+.section-heading {
+  border-bottom: 1px black solid;
+  padding: 12px 0;
+  &_title {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+  margin-bottom: 40px;
+}
+.new {
+  &-list {
+    @include grid(4, 40px);
+  }
+  &-img {
+    width: 100%;
+  }
+  &-item {
+    width: 285px;
+  }
+  &_info {
+    padding: 0 10px;
+  }
+  &_link {
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  &_catygopy {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+}
