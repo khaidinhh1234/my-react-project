@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  
+
+      <div class="menu">
+        <div class="container-fluid bg-black" >
+        <nav class="navbar navbar-expand-lg ">
+       
+         
+            
+              <ul class="navbar-nav ms-5 ">
+                <li class="nav-item flex-md-row   ">
+                  <a class="nav-link active  text-warning  hover " aria-current="page" href="/">
+                    <button class="btn  btn-outline-warning border-black fs-5">Trang chủ</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active  text-warning" aria-current="page" href="/shop"> <button class="btn btn-outline-warning border-black   fs-5 ">Sản phẩm</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active   text-warning" aria-current="page" href=""> <button class="btn btn-outline-warning border-black fs-5  ">Thêm sản phẩm</button></a>
+                </li>
+        
+               
+              </ul>
+        
+          </div>
+        </nav>
+      </div>
+      </div>
+      <div class="main mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center ">
+                <% for(pro of products){%>
+                <div class="text-center border shadow-lg  m-lg-4 py-3 pb-4    ">
+                    
+                        <div class="py-2">
+                        <h3 class="product-title_name"><%=pro.title %></h3>
+                    </div>
+                    <img src="<%=pro.imageURL %>" alt="ảnh " class="product-img">
+                    <div class="product-content">
+                        <h4 class="pt-2">$<%=pro.price %></h4>
+                        <p class="prodcut-content_des "><%=pro.description %></p>
+                        <button class="btn btn-light text-success border-success ">Add to Cart</button>
+                    </div>
+                </div>  
+               
+                
+                 <%} %>
+            </div>
+            
+        </div>
+      </div>
+       
+      
+       
+     
+
+  </body>
+</html>

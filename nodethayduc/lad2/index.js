@@ -42,6 +42,35 @@ app.get("/", (req, res) => {
   res.render("home", { thu: day });
 });
 
+app.get("/shop", (req, res) => {
+  var listProduct = [
+    {
+      id: "0101",
+      title: "Apple Book",
+      price: 3000,
+      description:
+        "A very interesting book about so many even more interesting things!",
+      imageURL: "https://picsum.photos/id/12/300/200",
+    },
+    {
+      id: "0102",
+      title: "Microsoft Book",
+      price: 2000,
+      description:
+        "A very interesting book about so many even more interesting things!",
+      imageURL: "https://picsum.photos/id/11/300/200",
+    },
+    {
+      id: "0103",
+      title: "VFast Book",
+      price: 1000,
+      description:
+        "A very interesting book about so many even more interesting things!",
+      imageURL: "https://picsum.photos/id/10/300/200",
+    },
+  ];
+  res.render("shop", { products: listProduct });
+});
 app.listen(port, () => {
   console.log("Khởi tạo server thành công !");
 });

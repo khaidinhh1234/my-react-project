@@ -4,8 +4,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "dev": "vite",
-    "server": "json-server --watch db.json"
+    "dev": "vite"
   },
   "author": "",
   "license": "ISC",

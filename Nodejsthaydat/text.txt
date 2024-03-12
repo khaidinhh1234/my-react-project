@@ -9,4 +9,4 @@
     "mongoose-paginate-v2":làm vc với databade
     "morgan": "^1.10.0",
     "vite": 
-    "vite-plugin-node": giúp chạy trên node
+    "vite-plugin-node": giúp chạy trên node = vite 
