@@ -10,6 +10,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   const today = new Date();
+
   currentDay = today.getDay();
   let day = "";
   switch (currentDay) {
@@ -21,7 +22,8 @@ app.get("/", (req, res) => {
       day = "Thứ Hai";
       break;
     case 2:
-      day = " Thứ Ba";
+      day = "Thứ Ba";
+
       break;
     case 3:
       day = "Thứ Tư";
@@ -67,6 +69,14 @@ app.get("/shop", (req, res) => {
       description:
         "A very interesting book about so many even more interesting things!",
       imageURL: "https://picsum.photos/id/10/300/200",
+    },
+    {
+      id: "0104",
+      title: "VFast Book",
+      price: 1000,
+      description:
+        "A very interesting book about so many even more interesting things!",
+      imageURL: "https://picsum.photos/id/15/300/200",
     },
   ];
   res.render("shop", { products: listProduct });

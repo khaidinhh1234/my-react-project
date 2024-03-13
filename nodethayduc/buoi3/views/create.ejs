@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="/store" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name Products</label>
+        <input
+          type="text"
+          min="1"
+          class="form-control"
+          name="name"
+          id="name"
+          placeholder="Name Products"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price Products</label>
+        <input
+          type="number"
+          min="1"
+          class="form-control"
+          name="price"
+          id="price"
+          placeholder="Price Products"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="sku" class="form-label">SUK Products</label>
+        <input
+          type="text"
+          min="1"
+          id="sku"
+          class="form-control"
+          name="sku"
+          placeholder="SUK Products"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description Products</label>
+        <input
+          type="text"
+          min="1"
+          id="description"
+          class="form-control"
+          name="description"
+          placeholder="Description Products"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
