@@ -1,27 +1,18 @@
-import express from "express";
+import express, { Router } from "express";
+import ProductRouter from "./router/product";
+
+import { connectDB } from "./config/db";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 
 //middlewate
 app.use(express.json()); // xử lí dữ liệu gửi từ client gửi lên server
-//router
-app.get("/", (req, res) => {
-  console.log("req.query");
-});
-app.get("/products/:id", (req, res) => {
-  console.log(req.params.id); //req.params.slug
-});
 
-app.post("/products", (req, res) => {
-  console.log(req.body);
-});
-app.get("/", (req, res) => {
-  console.log("heelllo");
-});
-app.get("/", (req, res) => {
-  console.log("heelllo");
-});
-app.get("/", (req, res) => {
-  console.log("heelllo");
-});
+//conect db
+connectDB(process.env.DB_URI);
+//routes
+app.use("/api", ProductRouter); //truy cập đến /api thì dẫn đến router
+Router;
 export const viteNodeApp = app;

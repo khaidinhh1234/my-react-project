@@ -7,13 +7,8 @@
     },
     {
       "id": "2",
-      "name": "hai",
-      "tuoi": 19
-    },
-    {
-      "name": "khaiedit",
-      "tuoi": 2004,
-      "id": "3"
+      "name": "khai1234",
+      "price": 100001234
     },
     {
       "id": "4",
@@ -29,6 +24,11 @@
       "id": "ba11",
       "name": "KHAI",
       "tuoi": 1111
+    },
+    {
+      "id": "100",
+      "name": "dai",
+      "price": 20000
     }
   ]
 }
