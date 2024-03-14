@@ -5,345 +5,428 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="style.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./public/scss/Trangchu.scss" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-inner">
-          <div class="header-logo">
-            <a href="" class="header-logo__link">
-              <img src="./assets/logo.svg" alt="" />
-            </a>
-          </div>
+          <a href="" class="header__logo">
+            <img src="./public/images/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
           <nav class="main-menu">
             <ul class="main-menu__list">
               <li class="main-menu__item">
-                <a href="" class="main-menu_link">Home</a>
+                <a href="./Trangchu.html" class="main-menu__link">Home</a>
               </li>
               <li class="main-menu__item">
-                <a href="" class="main-menu_link">Shop</a>
+                <a href="./Shop" class="main-menu__link">Shop</a>
               </li>
               <li class="main-menu__item">
-                <a href="" class="main-menu_link">About</a>
+                <a href="" class="main-menu__link">About</a>
               </li>
               <li class="main-menu__item">
-                <a href="" class="main-menu_link">Contact</a>
+                <a href="" class="main-menu__link">Contact</a>
               </li>
             </ul>
           </nav>
           <div class="header-items">
-            <div class="header-items__user">
-              <span>user</span>
+            <div class="header-item-user">
+              <span><img src="./public/images/img1.svg" /></span>
             </div>
-            <div class="header-items__user"><span>search</span></div>
-            <div class="header-items__user"><span>cart</span></div>
-            <div class="header-items__user"><span>wishlist</span></div>
+            <div class="header-item-user">
+              <span><img src="./public/images/img2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./public/images/img3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./public/images/img4.svg" /></span>
+            </div>
           </div>
         </div>
       </div>
     </header>
-
     <section class="banner">
       <img
-        src="https://picsum.photos/1440/500/?grayscale"
+        src="https://picsum.photos/id/10/1440/500"
         alt=""
         class="banner__img"
       />
     </section>
-    <section class="new">
+    <!--End .banner-->
+    <section class="news">
       <div class="container">
         <div class="section-heading">
-          <h1 class="section-heading_title">NEW</h1>
+          <h2 class="section-heading__title">New</h2>
         </div>
         <div class="section-body">
-          <div class="new-list">
-            <div class="new-item">
-              <div class="new_image">
-                <img src="https://picsum.photos/id/1/285/300" alt="" />
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">-30%</span>
               </div>
-              <div class="new_info">
-                <h3 class="new_name">
-                  <a href="" class="new_link">Syltherine</a>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
                 </h3>
-                <a href="" class="new_catygopy">Stylish cafe chair</a>
-                <div class="new-price">
-                  <span class="new-price_new">2.500.000đ</span>
-                  <span class="new-price-old">2.500.000đ</span>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old">3.500.000đ</del>
                 </div>
               </div>
-              <div class="new-actions">
-                <button class="btn new-action__quickview">Quick View</button>
-                <button class="btn new-action__addtocart">Add to Cart</button>
-                <div class="new-action-more">
-                  <span class="new-action__share">Share</span>
-                  <span class="new-action__compare">Compare</span>
-                  <span class="new-action__like">Like</span>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
                 </div>
               </div>
             </div>
-            <div class="new-item">
-              <div class="new_image">
-                <img src="https://picsum.photos/id/2/285/300" alt="" />
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-new">New</span>
               </div>
-              <div class="new_info">
-                <h3 class="new_name">
-                  <a href="" class="new_link">Syltherine</a>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
                 </h3>
-                <a href="" class="new_catygopy">Stylish cafe chair</a>
-                <div class="new-price">
-                  <span class="new-price_new">2.500.000đ</span>
-                  <span class="new-price-old">2.500.000đ</span>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
                 </div>
               </div>
             </div>
-            <div class="new-item">
-              <div class="new_image">
-                <img src="https://picsum.photos/id/3/285/300" alt="" />
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">-50%</span>
               </div>
-              <div class="new_info">
-                <h3 class="new_name">
-                  <a href="" class="new_link">Syltherine</a>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Lolito</a>
                 </h3>
-                <a href="" class="new_catygopy">Stylish cafe chair</a>
-                <div class="new-price">
-                  <span class="new-price_new">2.500.000đ</span>
-                  <span class="new-price-old">2.500.000đ</span>
+                <a href="" class="product__category">Luxury big sofa</a>
+                <div class="product-price">
+                  <span class="product-price__new">7.000.000đ</span>
+                  <del class="product-price__old">14.000.000đ</del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
                 </div>
               </div>
             </div>
-            <div class="new-item">
-              <div class="new_image">
-                <img src="https://picsum.photos/285/300" alt="" />
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-new">New</span>
               </div>
-              <div class="new_info">
-                <h3 class="new_name">
-                  <a href="" class="new_link">Syltherine</a>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Respira</a>
                 </h3>
-                <a href="" class="new_catygopy">Stylish cafe chair</a>
-                <div class="new-price">
-                  <span class="new-price_new">2.500.000đ</span>
-                  <span class="new-price-old">2.500.000đ</span>
+                <a href="" class="product__category"
+                  >Outdoor bar table and stool</a
+                >
+                <div class="product-price">
+                  <span class="product-price__new">5.000.000</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
                 </div>
               </div>
             </div>
+            <!--End .product-item-->
           </div>
         </div>
       </div>
     </section>
+    <div class="container">
+      <hr />
+    </div>
+    <!--End .news-->
     <section class="shop">
       <div class="container">
-        <div class="heading">
-          <h1 class="heading_title">SHOP</h1>
+        <div class="section-heading">
+          <h2 class="section-heading__title">Shop</h2>
         </div>
         <div class="section-body">
-          <div class="shop-list">
+          <div class="shops">
             <div class="shop-item">
-              <a href="" class="shop-item__link"
+              <a href="" class="shop__link"
                 ><img
-                  src="https://picsum.photos/id/237/605/460"
+                  src="https://picsum.photos/id/12/665/500"
                   alt=""
-                  class="shop__img"
+                  class="shop__image"
               /></a>
             </div>
             <div class="shop-item">
-              <a href="" class="shop-item__link"
+              <a href="" class="shop__link"
                 ><img
-                  src="https://picsum.photos/id/237/605/460"
+                  src="https://picsum.photos/id/13/665/500"
                   alt=""
-                  class="shop__img"
+                  class="shop__image"
               /></a>
             </div>
             <div class="shop-item">
-              <a href="" class="shop-item__link"
+              <a href="" class="shop__link"
                 ><img
-                  src="https://picsum.photos/id/237/605/460"
+                  src="https://picsum.photos/id/14/665/500"
                   alt=""
-                  class="shop__img"
+                  class="shop__image"
               /></a>
             </div>
             <div class="shop-item">
-              <a href="" class="shop-item__link"
+              <a href="" class="shop__link"
                 ><img
-                  src="https://picsum.photos/id/237/605/460"
+                  src="https://picsum.photos/id/15/665/500"
                   alt=""
-                  class="shop__img"
+                  class="shop__image"
               /></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--End .shop-->
     <section class="blog">
       <div class="container">
-        <div class="heading">
-          <h1 class="heading_title">BLOG</h1>
+        <div class="section-heading section-blog-heading">
+          <h2 class="section-heading__title">Blog</h2>
         </div>
         <div class="section-body">
-          <div class="blog-list">
-            <div class="blog-item">
-              <div class="blog-image">
-                <a href=""
-                  ><img
-                    src="https://picsum.photos/seed/picsum/605/250"
-                    class="blog__thumbnail"
-                /></a>
+          <div class="post-list">
+            <div class="post-item">
+              <div class="post-image">
+                <a href="">
+                  <img
+                    src="https://picsum.photos/id/16/665/250"
+                    alt=""
+                    class="post__thumbnail"
+                  />
+                </a>
               </div>
-              <div class="blog-info">
-                <h3 class="blog-title">
-                  <a href="blog-tile__link">THE ULTIMATE SOFA BUYING GUIDE</a>
+              <div class="post-info">
+                <h3 class="post__title">
+                  <a href="" class="post__link"
+                    >THE ULTIMATE SOFA BUYING GUIDE</a
+                  >
                 </h3>
-                <p class="blog-excerpt">
+                <p class="post__excerpt">
                   The versatility of our living space is more crucial than ever.
                   But buying a sofa might be a difficult undertaking. Your needs
                   and the size of your living area will determine everything,
                   However, don’t worry, were are here to help you
                 </p>
-                <a href="" class="blog-readmode">Readmode</a>
+                <a href="" class="post__readmore">Readmore</a>
               </div>
             </div>
-            <div class="blog-item">
-              <div class="blog-image">
-                <a href=""
-                  ><img
-                    src="https://picsum.photos/seed/picsum/605/250"
-                    class="blog__thumbnail"
-                /></a>
+            <!--End .post-item-->
+            <div class="post-item">
+              <div class="post-image">
+                <a href="">
+                  <img
+                    src="https://picsum.photos/id/17/665/250"
+                    alt=""
+                    class="post__thumbnail"
+                  />
+                </a>
               </div>
-              <div class="blog-info">
-                <h3 class="blog-title">
-                  <a href="blog-tile__link">THE ULTIMATE SOFA BUYING GUIDE</a>
+              <div class="post-info">
+                <h3 class="post__title">
+                  <a href="" class="post__link"
+                    >THE ULTIMATE SOFA BUYING GUIDE</a
+                  >
                 </h3>
-                <p class="blog-excerpt">
+                <p class="post__excerpt">
                   The versatility of our living space is more crucial than ever.
                   But buying a sofa might be a difficult undertaking. Your needs
                   and the size of your living area will determine everything,
                   However, don’t worry, were are here to help you
                 </p>
-                <a href="" class="blog-readmode">Readmode</a>
+                <a href="" class="post__readmore">Readmore</a>
               </div>
             </div>
-            <div class="blog-item">
-              <div class="blog-image">
-                <a href=""
-                  ><img
-                    src="https://picsum.photos/seed/picsum/605/250"
-                    class="blog__thumbnail"
-                /></a>
-              </div>
-              <div class="blog-info">
-                <h3 class="blog-title">
-                  <a href="blog-tile__link">THE ULTIMATE SOFA BUYING GUIDE</a>
-                </h3>
-                <p class="blog-excerpt">
-                  The versatility of our living space is more crucial than ever.
-                  But buying a sofa might be a difficult undertaking. Your needs
-                  and the size of your living area will determine everything,
-                  However, don’t worry, were are here to help you
-                </p>
-                <a href="" class="blog-readmode">Readmode</a>
-              </div>
-            </div>
+            <!--End .post-item-->
           </div>
         </div>
       </div>
     </section>
+    <!--End .blog-->
+
     <section class="services">
       <div class="container-fluid">
         <div class="service-list">
           <div class="service-item">
-            <img src="https://picsum.photos/seed/picsum/60/60" alt="" />
+            <img src="./public/images/sevicse 1.svg" class="service__image" />
             <div class="service-info">
-              <h4 class="service-name">High Quality</h4>
-              <p class="service-description">crafted from top materials</p>
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
             </div>
           </div>
+          <!--End service-item-->
           <div class="service-item">
-            <img src="https://picsum.photos/seed/picsum/60/60" alt="" />
+            <img src="./public/images/secvise 2.svg" class="service__image" />
             <div class="service-info">
-              <h4 class="service-name">High Quality</h4>
-              <p class="service-description">crafted from top materials</p>
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
             </div>
           </div>
-
+          <!--End service-item-->
           <div class="service-item">
-            <img src="https://picsum.photos/seed/picsum/60/60" alt="" />
+            <img src="./public/images/secvise 3.svg" class="service__image" />
             <div class="service-info">
-              <h4 class="service-name">High Quality</h4>
-              <p class="service-description">crafted from top materials</p>
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
             </div>
           </div>
+          <!--End service-item-->
           <div class="service-item">
-            <img src="https://picsum.photos/seed/picsum/60/60" alt="" />
+            <img src="./public/images/secvise 4.svg" class="service__image" />
             <div class="service-info">
-              <h4 class="service-name">High Quality</h4>
-              <p class="service-description">crafted from top materials</p>
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
             </div>
           </div>
+          <!--End service-item-->
         </div>
       </div>
     </section>
-    <foofer class="foofer"
-      ><div class="container">
+    <!--End .services-->
+    <footer class="footer">
+      <div class="container">
         <div class="footer-list">
           <div class="footer-item">
-            <img src="https://picsum.photos/seed/picsum/85/36" alt="" />
-            <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+            <img src="./public/images/logofooter.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
           </div>
-          <div class="footer-item">
-            <h3 class="footer_title">Links</h3>
-            <nav class="footer-menu">
-              <ul class="footer-list">
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
                 </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
                 </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
                 </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
                 </li>
               </ul>
-            </nav>
-          </div>
-          <div class="footer-item">
-            <h3 class="footer_title">Links</h3>
-            <nav class="footer-menu">
-              <ul class="footer-list">
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
                 </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
                 </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Home</a>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
           <div class="footer-item">
-            <h3 class="footer_title">Newsletter</h3>
-            <form action="" class="newsletter-form">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
               <input
                 type="text"
-                class="newsletter-input"
+                class="newsletter__input"
                 placeholder="Enter Your Email Address"
               />
-              <button class="newsletter-btn">SUBSCRIBE</button>
+              <button class="newsletter__btn">Subscribe</button>
             </form>
           </div>
         </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
       </div>
-    </foofer>
+    </footer>
   </body>
 </html>
