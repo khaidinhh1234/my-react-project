@@ -46,13 +46,13 @@ img {
 .button-mobile {
   text-align: right;
   display: inline-block;
-  @include m.breakpoint(lg) {
+  @include m.breakpoint(md) {
     display: none;
   }
 }
 .main-menu {
   display: none;
-  @include m.breakpoint(lg) {
+  @include m.breakpoint(md) {
     display: block;
   }
   &__list {
@@ -61,7 +61,7 @@ img {
     padding: 0;
     list-style: none;
 
-    @include m.breakpoint(lg) {
+    @include m.breakpoint(md) {
       display: flex;
     }
   }

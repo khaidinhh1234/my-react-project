@@ -3,56 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* CSS cho phần giao diện */
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .button {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Ảnh</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td class="mw-1">
-            <div
-              class="border border-danger p-2 mb-2 text-center mw-100"
-              style="width: 300px; height: 300px"
-            >
-              <img
-                src="https://picsum.photos/500/500/?grayscale"
-                alt=""
-                class="img-thumbnail"
-              />
-            </div>
-          </td>
-
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>@fat</td>
-          <td class="mw-1">
-            <div
-              class="border border-danger pt-5 mb-2 text-center"
-              style="width: 300px; height: 300px"
-            >
-              <img
-                src="https://picsum.photos/1440/500/?grayscale"
-                alt=""
-                class="img-thumbnail mt-5"
-              />
-            </div>
-          </td>
-          <td>@fat</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container">
+      <div class="button">-</div>
+      <div class="number">1</div>
+      <div class="button">+</div>
+    </div>
   </body>
 </html>
