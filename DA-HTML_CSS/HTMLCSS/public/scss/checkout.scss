@@ -28,9 +28,7 @@ img {
     @include m.breakpoint(lg) {
     }
   }
-  &-inner > * {
-    flex: 1;
-  }
+
   &-items {
     display: none;
 
@@ -44,10 +42,19 @@ img {
   }
 }
 .button-mobile {
-  text-align: right;
   display: inline-block;
+  margin: 0 20px;
   @include m.breakpoint(md) {
     display: none;
+  }
+  &-bar1,
+  &-bar2,
+  &-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
   }
 }
 .main-menu {
@@ -92,12 +99,32 @@ img {
 .bill {
   margin: 60px 0 30px 0;
   &-info {
-    margin-top: 140px;
-    @include m.grid(2, 50px);
+    margin-top: 30px;
+    @include m.grid(1, 50px);
+    @include m.breakpoint(md) {
+      @include m.grid(1, 5px);
+      margin-top: 100px;
+    }
+    @include m.breakpoint(lg) {
+      @include m.grid(2, 5px);
+      margin-top: 140px;
+    }
+    @include m.breakpoint(xl) {
+      @include m.grid(2, 50px);
+      margin-top: 140px;
+    }
   }
   &-details {
-    margin: 0 40px;
-    padding: 0 48px;
+    margin: 0px;
+    padding: 0px;
+    @include m.breakpoint(lg) {
+      margin: 0 20px;
+      padding: 0 18px;
+    }
+    @include m.breakpoint(lg) {
+      margin: 0 40px;
+      padding: 0 48px;
+    }
   }
   &-title-h1 {
     font-size: 36px;
@@ -105,19 +132,37 @@ img {
     margin-bottom: 44px;
   }
   &-name {
-    @include m.grid(2, 34px);
+    @include m.flex(2, 10px);
+
     margin-bottom: 12px;
+    @include m.breakpoint(lg) {
+      @include m.grid(2, 34px);
+      margin-bottom: 12px;
+    }
+  }
+  &-firstname {
+    @include m.breakpoint(md) {
+      margin-left: 0 50px;
+    }
   }
   &-namelable {
     font-weight: 600;
   }
   &-nameinput {
-    margin: 25px 0;
+    margin: 15px 0;
     padding: 20px;
-    width: 168px;
-    height: 32px;
+    width: 180px;
+    height: 10px;
     border-radius: 10px;
     border: 1px #9f9f9f solid;
+    @include m.breakpoint(lg) {
+      margin: 25px 0;
+      padding: 20px;
+      width: 168px;
+      height: 32px;
+      border-radius: 10px;
+      border: 1px #9f9f9f solid;
+    }
   }
   &-form {
     margin-bottom: 12px;
@@ -126,21 +171,38 @@ img {
     font-weight: 600;
   }
   &-forminput {
-    margin: 28px 0;
+    margin: 15px 0;
     padding: 20px;
     width: 411px;
-    height: 32px;
+    height: 10px;
     border-radius: 10px;
     border: 1px #9f9f9f solid;
+    @include m.breakpoint(lg) {
+      margin: 28px 0;
+      padding: 20px;
+      width: 411px;
+      height: 32px;
+      border-radius: 10px;
+      border: 1px #9f9f9f solid;
+    }
   }
   &-formselect {
-    margin: 23px 0;
-    padding: 20px;
+    margin: 15px 0;
+    padding: 0px 20px;
     width: 453px;
-    height: 78px;
+    height: 48px;
     border-radius: 10px;
     border: 1px #9f9f9f solid;
     color: #9f9f9f;
+    @include m.breakpoint(lg) {
+      margin: 23px 0;
+      padding: 20px;
+      width: 453px;
+      height: 78px;
+      border-radius: 10px;
+      border: 1px #9f9f9f solid;
+      color: #9f9f9f;
+    }
   }
   &-formoption {
     color: #000;

@@ -1,0 +1,6 @@
+git init
+git remote add origin https://github.com/khaidinhh1234/demo-xuonghtmlcss.git
+tạo file .gitignore
+ git add .
+ git commit -m "init"
+ git push origin main

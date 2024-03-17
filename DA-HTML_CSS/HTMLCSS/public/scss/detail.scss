@@ -1,6 +1,10 @@
 @use "_mixin" as m;
 $font-poppins: "Poppins", sans-serif;
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 body {
   font-family: $font-poppins;
 }
@@ -24,9 +28,7 @@ img {
     @include m.breakpoint(lg) {
     }
   }
-  &-inner > * {
-    flex: 1;
-  }
+
   &-items {
     display: none;
 
@@ -40,15 +42,24 @@ img {
   }
 }
 .button-mobile {
-  text-align: right;
   display: inline-block;
-  @include m.breakpoint(lg) {
+  margin: 0 20px;
+  @include m.breakpoint(md) {
     display: none;
+  }
+  &-bar1,
+  &-bar2,
+  &-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
   }
 }
 .main-menu {
   display: none;
-  @include m.breakpoint(lg) {
+  @include m.breakpoint(md) {
     display: block;
   }
   &__list {
@@ -57,7 +68,7 @@ img {
     padding: 0;
     list-style: none;
 
-    @include m.breakpoint(lg) {
+    @include m.breakpoint(md) {
       display: flex;
     }
   }
@@ -78,25 +89,37 @@ img {
 // END HEADER
 
 .review {
-  height: 98px;
+  height: 60px;
   background: #f9f1e7;
   margin: 13px 0;
+  @include m.breakpoint(lg) {
+    height: 98px;
+    background: #f9f1e7;
+    margin: 13px 0;
+  }
 
   &-info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 32px 10px;
+    padding: 15px 10px;
+    @include m.breakpoint(lg) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 32px 10px;
+    }
   }
   &-home {
     padding: 0 10px;
     &__link {
+      font-size: 15px;
       text-decoration: none;
       color: #000;
     }
     &-sofa {
       border-left: 1px #000 solid;
-      padding: 9px 30px;
+      padding: 4px 25px;
     }
   }
   &-img {
@@ -109,13 +132,20 @@ img {
 .product {
   margin: 37px 0;
   &-list {
-    @include m.grid(2, 20px);
+    @include m.grid(1, 20px);
+    @include m.breakpoint(lg) {
+      @include m.grid(2, 20px);
+    }
   }
   &-images {
     // display: flex;
     // gap: 30px;
-    @include m.flex(2, 30px);
-
+    @include m.breakpoint(lg) {
+      @include m.flex(2, 30px);
+      padding: 0 11px;
+    }
+    @include m.flex(1, 30px);
+    justify-content: center;
     padding: 0 11px;
   }
   &-images__smailone {
@@ -124,7 +154,12 @@ img {
   &-images-size {
     border-radius: 10px;
   }
-
+  &-info {
+    margin: 0 30px;
+    @include m.breakpoint(lg) {
+      margin: 0px;
+    }
+  }
   &-asgaard {
     padding: 0;
     margin: 4px 0;
@@ -281,6 +316,10 @@ img {
       border: 1px rgb(179, 177, 177) solid;
       font-size: 20px;
     }
+    &-link {
+      text-decoration: none;
+      color: #000;
+    }
   }
   &-hr {
     margin-bottom: 26px;
@@ -312,23 +351,42 @@ img {
     padding: 0 13px;
   }
   &__des {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500px;
+    @include m.breakpoint(lg) {
+      font-size: 24px;
+      font-weight: 500px;
+    }
   }
   &__add,
   &__re {
-    font-size: 24px;
+    font-size: 20px;
+
+    @include m.breakpoint(lg) {
+      font-size: 24px;
+    }
   }
   &_main {
     padding: 0 17px;
-    margin: 46px 100px;
+    margin: 40px 80px;
+    @include m.breakpoint(lg) {
+      padding: 0 17px;
+      margin: 46px 100px;
+    }
   }
   &_excerpt {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   &_footer {
-    @include m.flex(2, 30px);
-    margin: 10px 0;
+    text-align: center;
+    @include m.breakpoint(lg) {
+      @include m.flex(2, 30px);
+      margin: 10px 0;
+    }
+    &_img {
+      width: 80%;
+      margin-bottom: 10px;
+    }
   }
 }
 .related {
@@ -457,6 +515,7 @@ img {
   }
   &-action__link {
     text-decoration: none;
+    color: #b88e2f;
   }
 }
 .show {

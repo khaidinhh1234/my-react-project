@@ -24,7 +24,11 @@
           <a href="" class="header__logo">
             <img src="./public/images/logo.svg" alt="" />
           </a>
-          <div class="button-mobile"><button>=</button></div>
+          <div class="button-mobile">
+            <div class="button-mobile-bar1"></div>
+            <div class="button-mobile-bar2"></div>
+            <div class="button-mobile-bar3"></div>
+          </div>
           <nav class="main-menu">
             <ul class="main-menu__list">
               <li class="main-menu__item">
@@ -34,16 +38,16 @@
                 <a href="./shop.html" class="main-menu__link">Shop</a>
               </li>
               <li class="main-menu__item">
-                <a href="" class="main-menu__link">About</a>
+                <a href="#" class="main-menu__link">About</a>
               </li>
               <li class="main-menu__item">
-                <a href="" class="main-menu__link">Contact</a>
+                <a href="#" class="main-menu__link">Contact</a>
               </li>
             </ul>
           </nav>
           <div class="header-items">
             <div class="header-item-user">
-              <span><img src="./public/images/img1.svg" /></span>
+              <a href="login.html"><img src="./public/images/img1.svg" /></a>
             </div>
             <div class="header-item-user">
               <span><img src="./public/images/img2.svg" /></span>
@@ -60,7 +64,7 @@
     </header>
     <section class="banner">
       <img
-        src="https://picsum.photos/id/10/1440/500"
+        src="https://picsum.photos/id/133/1440/500"
         alt=""
         class="banner__img"
       />
@@ -108,28 +112,68 @@
             <div class="product-item">
               <div class="product-image">
                 <img
-                  src="https://picsum.photos/id/10/300/300"
+                  src="https://picsum.photos/id/98/300/300"
                   alt=""
                   class="product__thumbnail"
-                />
-                <span class="product-sale">-30%</span>
+                /><span class="product-new">New</span>
               </div>
               <div class="product-info">
                 <h3 class="product__name">
-                  <a href="" class="product__link">Syltherine</a>
+                  <a href="" class="product__link">Leviosa</a>
                 </h3>
                 <a href="" class="product__category">Stylish cafe chair</a>
                 <div class="product-price">
                   <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old">3.500.000đ</del>
+                  <del class="product-price__old"></del>
                 </div>
               </div>
               <div class="product-actions">
                 <button class="btn product-action__quickview">
-                  Quick View
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
                 </button>
                 <button class="btn product-action__addtocart">
-                  Add To Cart
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+               <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/131/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-sale">-50%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
                 </button>
                 <div class="product-actions-more">
                   <span class="product-action__share">Share</span>
@@ -142,10 +186,10 @@
             <div class="product-item">
               <div class="product-image">
                 <img
-                  src="https://picsum.photos/id/10/300/300"
+                  src="https://picsum.photos/id/198/300/300"
                   alt=""
                   class="product__thumbnail"
-                /><span class="product-new">New</span>
+                />
               </div>
               <div class="product-info">
                 <h3 class="product__name">
@@ -159,10 +203,14 @@
               </div>
               <div class="product-actions">
                 <button class="btn product-action__quickview">
-                  Quick View
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
                 </button>
                 <button class="btn product-action__addtocart">
-                  Add To Cart
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
                 </button>
                 <div class="product-actions-more">
                   <span class="product-action__share">Share</span>
@@ -175,77 +223,10 @@
             <div class="product-item">
               <div class="product-image">
                 <img
-                  src="https://picsum.photos/id/10/300/300"
+                  src="https://picsum.photos/id/189/300/300"
                   alt=""
                   class="product__thumbnail"
-                />
-                <span class="product-sale">-50%</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Lolito</a>
-                </h3>
-                <a href="" class="product__category">Luxury big sofa</a>
-                <div class="product-price">
-                  <span class="product-price__new">7.000.000đ</span>
-                  <del class="product-price__old">14.000.000đ</del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>
-              <!--End .product-item-->
-              <div class="product-item">
-                <div class="product-image">
-                  <img
-                    src="https://picsum.photos/id/10/300/300"
-                    alt=""
-                    class="product__thumbnail"
-                  /><span class="product-new">New</span>
-                </div>
-                <div class="product-info">
-                  <h3 class="product__name">
-                    <a href="" class="product__link">Leviosa</a>
-                  </h3>
-                  <a href="" class="product__category">Stylish cafe chair</a>
-                  <div class="product-price">
-                    <span class="product-price__new">2.500.000đ</span>
-                    <del class="product-price__old"></del>
-                  </div>
-                </div>
-                <div class="product-actions">
-                  <button class="btn product-action__quickview">
-                    Quick View
-                  </button>
-                  <button class="btn product-action__addtocart">
-                    Add To Cart
-                  </button>
-                  <div class="product-actions-more">
-                    <span class="product-action__share">Share</span>
-                    <span class="product-action__compare">Compare</span>
-                    <span class="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
-                <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
+                /><span class="product-sale">-30%</span>
               </div>
               <div class="product-info">
                 <h3 class="product__name">
@@ -259,337 +240,14 @@
               </div>
               <div class="product-actions">
                 <button class="btn product-action__quickview">
-                  Quick View
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
                 </button>
                 <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>
-
-              <!--End .product-item-->
-              <div class="product-item">
-                <div class="product-image">
-                  <img
-                    src="https://picsum.photos/id/10/300/300"
-                    alt=""
-                    class="product__thumbnail"
-                  /><span class="product-new">New</span>
-                </div>
-                <div class="product-info">
-                  <h3 class="product__name">
-                    <a href="" class="product__link">Leviosa</a>
-                  </h3>
-                  <a href="" class="product__category">Stylish cafe chair</a>
-                  <div class="product-price">
-                    <span class="product-price__new">2.500.000đ</span>
-                    <del class="product-price__old"></del>
-                  </div>
-                </div>
-                <div class="product-actions">
-                  <button class="btn product-action__quickview">
-                    Quick View
-                  </button>
-                  <button class="btn product-action__addtocart">
-                    Add To Cart
-                  </button>
-                  <div class="product-actions-more">
-                    <span class="product-action__share">Share</span>
-                    <span class="product-action__compare">Compare</span>
-                    <span class="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
-                <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>
-              <!--End .product-item-->
-              <div class="product-item">
-                <div class="product-image">
-                  <img
-                    src="https://picsum.photos/id/10/300/300"
-                    alt=""
-                    class="product__thumbnail"
-                  /><span class="product-new">New</span>
-                </div>
-                <div class="product-info">
-                  <h3 class="product__name">
-                    <a href="" class="product__link">Leviosa</a>
-                  </h3>
-                  <a href="" class="product__category">Stylish cafe chair</a>
-                  <div class="product-price">
-                    <span class="product-price__new">2.500.000đ</span>
-                    <del class="product-price__old"></del>
-                  </div>
-                </div>
-                <div class="product-actions">
-                  <button class="btn product-action__quickview">
-                    Quick View
-                  </button>
-                  <button class="btn product-action__addtocart">
-                    Add To Cart
-                  </button>
-                  <div class="product-actions-more">
-                    <span class="product-action__share">Share</span>
-                    <span class="product-action__compare">Compare</span>
-                    <span class="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
-                <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>
-              <!--End .product-item-->
-              <div class="product-item">
-                <div class="product-image">
-                  <img
-                    src="https://picsum.photos/id/10/300/300"
-                    alt=""
-                    class="product__thumbnail"
-                  /><span class="product-new">New</span>
-                </div>
-                <div class="product-info">
-                  <h3 class="product__name">
-                    <a href="" class="product__link">Leviosa</a>
-                  </h3>
-                  <a href="" class="product__category">Stylish cafe chair</a>
-                  <div class="product-price">
-                    <span class="product-price__new">2.500.000đ</span>
-                    <del class="product-price__old"></del>
-                  </div>
-                </div>
-                <div class="product-actions">
-                  <button class="btn product-action__quickview">
-                    Quick View
-                  </button>
-                  <button class="btn product-action__addtocart">
-                    Add To Cart
-                  </button>
-                  <div class="product-actions-more">
-                    <span class="product-action__share">Share</span>
-                    <span class="product-action__compare">Compare</span>
-                    <span class="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
-                <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>  <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>  <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>  <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
-                </button>
-                <div class="product-actions-more">
-                  <span class="product-action__share">Share</span>
-                  <span class="product-action__compare">Compare</span>
-                  <span class="product-action__like">Like</span>
-                </div>
-              </div>
-            </div>  <!--End .product-item-->
-            <div class="product-item">
-              <div class="product-image">
-                <img
-                  src="https://picsum.photos/id/10/300/300"
-                  alt=""
-                  class="product__thumbnail"
-                /><span class="product-new">New</span>
-              </div>
-              <div class="product-info">
-                <h3 class="product__name">
-                  <a href="" class="product__link">Leviosa</a>
-                </h3>
-                <a href="" class="product__category">Stylish cafe chair</a>
-                <div class="product-price">
-                  <span class="product-price__new">2.500.000đ</span>
-                  <del class="product-price__old"></del>
-                </div>
-              </div>
-              <div class="product-actions">
-                <button class="btn product-action__quickview">
-                  Quick View
-                </button>
-                <button class="btn product-action__addtocart">
-                  Add To Cart
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
                 </button>
                 <div class="product-actions-more">
                   <span class="product-action__share">Share</span>
@@ -602,30 +260,438 @@
             <div class="product-item">
               <div class="product-image">
                 <img
-                  src="https://picsum.photos/id/10/300/300"
+                  src="https://picsum.photos/id/134/300/300"
                   alt=""
                   class="product__thumbnail"
-                />
-                <span class="product-new">New</span>
+                /><span class="product-sale">-50%</span>
               </div>
               <div class="product-info">
                 <h3 class="product__name">
-                  <a href="" class="product__link">Respira</a>
+                  <a href="" class="product__link">Leviosa</a>
                 </h3>
-                <a href="" class="product__category"
-                  >Outdoor bar table and stool</a
-                >
+                <a href="" class="product__category">Stylish cafe chair</a>
                 <div class="product-price">
-                  <span class="product-price__new">5.000.000</span>
+                  <span class="product-price__new">2.500.000đ</span>
                   <del class="product-price__old"></del>
                 </div>
               </div>
               <div class="product-actions">
                 <button class="btn product-action__quickview">
-                  Quick View
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
                 </button>
                 <button class="btn product-action__addtocart">
-                  Add To Cart
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/123/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/120/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/32/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/178/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-sale">-50%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/14/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/23/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/34/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/46/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-sale">-30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/38/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-sale">-30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/239/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/999/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-sale">-50%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
                 </button>
                 <div class="product-actions-more">
                   <span class="product-action__share">Share</span>

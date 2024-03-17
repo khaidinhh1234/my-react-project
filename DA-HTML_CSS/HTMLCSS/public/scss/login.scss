@@ -22,7 +22,15 @@ body {
   align-items: center;
   margin-top: 50px;
   &-info {
-    width: 800px;
+    @include m.breakpoint(sm) {
+      width: 400px;
+    }
+    @include m.breakpoint(md) {
+      width: 600px;
+    }
+    @include m.breakpoint(lg) {
+      width: 800px;
+    }
   }
   &-close {
     display: grid;
@@ -41,16 +49,50 @@ body {
     margin-bottom: 40px;
   }
   &-username {
-    width: 600px;
-    margin-left: 100px;
-    height: 105px;
-    margin-bottom: 15px;
+    @include m.breakpoint(sm) {
+      width: 600px;
+      margin-left: 35px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+
+    @include m.breakpoint(md) {
+      width: 600px;
+      margin-left: 85px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+    @include m.breakpoint(lg) {
+      width: 600px;
+      margin-left: 100px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
   }
   &-password {
     width: 600px;
-    margin-left: 100px;
+
     height: 105px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    @include m.breakpoint(sm) {
+      width: 600px;
+      margin-left: 35px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+
+    @include m.breakpoint(md) {
+      width: 600px;
+      margin-left: 85px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+    @include m.breakpoint(lg) {
+      width: 600px;
+      margin-left: 100px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
   }
   &-label {
     display: block;
@@ -59,10 +101,28 @@ body {
   }
 
   &-input {
-    width: 600px;
-    height: 55px;
-    padding: 0 20pxc;
+    width: 200px;
+    height: 45px;
+    padding: 0 20px;
     border-radius: 15px;
+    @include m.breakpoint(sm) {
+      width: 300px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 15px;
+    }
+    @include m.breakpoint(md) {
+      width: 400px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 15px;
+    }
+    @include m.breakpoint(lg) {
+      width: 600px;
+      height: 55px;
+      padding: 0 20pxc;
+      border-radius: 15px;
+    }
   }
   &-one {
     text-align: center;
@@ -77,6 +137,11 @@ body {
     font-weight: 800;
     border: none;
   }
+  &-btn-link {
+    text-decoration: none;
+    color: #000;
+  }
+
   &-face {
     @include m.flex(2, 137px);
     justify-content: center;
