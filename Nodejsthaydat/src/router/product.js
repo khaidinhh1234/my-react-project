@@ -13,6 +13,6 @@ route.get("/", getProducts);
 route.get("/products/:id", getProductById);
 route.post("/products", addProducts);
 route.put("/products/:id", updateProducts);
-route.delete("/products/:id", deleteProducts);
 
+route.delete("/products/:id", deleteProducts);
 export default route;

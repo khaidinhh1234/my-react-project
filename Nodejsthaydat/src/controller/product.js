@@ -2,6 +2,9 @@ import product from "../model/Product";
 export const getProducts = async (req, res) => {
   try {
     const data = await product.find();
+    if (data.length < 0) {
+      return res.status(404).json({ message: "NO products found" });
+    }
     res.status(201).json(data);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -16,12 +19,14 @@ export const getProducts = async (req, res) => {
 };
 
 export const getProductById = async (req, res) => {
-  const id = req.params.id
   try {
-   const data = await product.findOne(id);
-   res.status(201).json(data)
+    const data = await product.findOne({ _id: req.params.id });
+    if (data.length < 0) {
+      return res.status(404).json({ message: "NO products found" });
+    }
+    res.status(201).json(data);
   } catch (error) {
-    res
+    res.status(500).json({ message: error.message });
   }
 };
 
@@ -35,9 +40,25 @@ export const addProducts = async (req, res) => {
   }
 };
 export const deleteProducts = async (req, res) => {
-  console.log("products");
+  try {
+    const data = await product.findOneAndDelete({ _id: req.params.id });
+    if (data.length < 0) {
+      return res.status(404).json({ message: "NO products found" });
+    }
+    res.status(201).json(data);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 };
+
 export const updateProducts = async (req, res) => {
-  const id = req.params.id;
-  console.log("products");
+  try {
+    const data = await product.findOneAndUpdate({ _id: req.params.id });
+    if (data.length < 0) {
+      return res.status(404).json({ message: "NO products found" });
+    }
+    res.status(201).json(data);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 };
