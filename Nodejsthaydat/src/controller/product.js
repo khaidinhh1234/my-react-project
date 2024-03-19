@@ -53,7 +53,11 @@ export const deleteProducts = async (req, res) => {
 
 export const updateProducts = async (req, res) => {
   try {
-    const data = await product.findOneAndUpdate({ _id: req.params.id });
+    const data = await product.findOneAndUpdate(
+      { _id: req.params.id },
+      req.body,
+      { new: true }
+    );
     if (data.length < 0) {
       return res.status(404).json({ message: "NO products found" });
     }
