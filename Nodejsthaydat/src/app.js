@@ -3,6 +3,7 @@ import ProductRouter from "./router/product";
 import { connectDB } from "./config/db";
 import dotenv from "dotenv";
 import morgan from "morgan";
+import authRouter from "./router/auth";
 dotenv.config();
 
 const app = express();
@@ -14,5 +15,5 @@ app.use(morgan("dev"));
 connectDB("mongodb://localhost:27017/WD18330");
 //routes
 app.use("/api", ProductRouter); //truy cập đến /api thì dẫn đến router
-Router;
+app.use("/api", authRouter);
 export const viteNodeApp = app;
