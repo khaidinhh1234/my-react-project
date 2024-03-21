@@ -2,7 +2,7 @@
     "products": [
         {
             "name": "123",
-            "image": "123",
+            "image": "https://picsum.photos/id/312/300/300",
             "price": "123",
             "quality": "121",
             "description": "123",

@@ -1,3 +1,5 @@
+import { getAllProducts } from "@/services/products";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 
 const Header = () => {

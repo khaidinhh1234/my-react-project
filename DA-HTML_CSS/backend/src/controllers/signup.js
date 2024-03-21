@@ -17,8 +17,7 @@ const signupSchema = Joi.object({
   password: Joi.string().min(6).max(30).required().messages({
     "any.required": "Password là bắt buộc",
     "string.empty": "Password không được bỏ trống",
-    "string.min": "Password có độ dài là {#limit} ký tự",
-    "string.max": "Password không vượt quá  (#limit) ký tự ",
+    "string.min": "Password có độ dài là (#limit) ký tự",
   }),
   confirmPassword: Joi.string().required().valid(Joi.ref(`password`)).messages({
     "any.required": "Comfirm là bắt buộc ",
@@ -45,7 +44,7 @@ export const signup = async (req, res) => {
   }
   const hashedPassword = await bcryptjs.hash(password, 10);
   const role = (await User.countDocuments({})) === 0 ? "admin" : "user";
-  const user = await User.create({
+  const data = await User.create({
     ...req.body,
     password: hashedPassword,
     role,
