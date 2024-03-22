@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "name": "Sản Phẩm 1",
+      "image": "https://picsum.photos/id/31/300/300",
+      "price": "43000000",
+      "quality": "863",
+      "description": "hay",
+      "discount": "50",
+      "id": "6",
+      "featured": false
+    },
+    {
+      "name": "Sản Phẩm 2",
+      "image": "https://picsum.photos/id/32/300/300",
+      "price": "12000000",
+      "quality": "163",
+      "description": "hay",
+      "discount": "10",
+      "id": "1",
+      "featured": false
+    },
+    {
+      "name": "Sản Phẩm 3",
+      "image": "https://picsum.photos/id/12/300/300",
+      "price": "76000000",
+      "quality": "173",
+      "description": "hay",
+      "discount": "50",
+      "id": "2",
+      "featured": false
+    },
+    {
+      "name": "Sản Phẩm 4",
+      "image": "https://picsum.photos/id/3/300/300",
+      "price": "24000000",
+      "quality": "273",
+      "discount": "0.25",
+      "description": "xau",
+      "id": "3",
+      "featured": true
+    },
+    {
+      "id": "c49c",
+      "name": "khai1111",
+      "image": "",
+      "price": "",
+      "quality": "",
+      "desciption": "",
+      "discount": ""
+    },
+    {
+      "id": "43a4",
+      "name": "",
+      "image": "",
+      "price": "",
+      "quality": "",
+      "desciption": "",
+      "discount": ""
+    }
+  ]
+}

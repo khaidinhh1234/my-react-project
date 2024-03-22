@@ -1,0 +1,40 @@
+{
+  "hash": "8ba72e5b",
+  "configHash": "890f4c75",
+  "lockfileHash": "69be7645",
+  "browserHash": "378bb29d",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "6fb56944",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "aac4a4a8",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "d9e2cb8f",
+      "needsInterop": false
+    },
+    "@tanstack/react-query": {
+      "src": "../../node_modules/@tanstack/react-query/build/modern/index.js",
+      "file": "@tanstack_react-query.js",
+      "fileHash": "3bc038fd",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-27NW7BBS": {
+      "file": "chunk-27NW7BBS.js"
+    },
+    "chunk-J452VTWM": {
+      "file": "chunk-J452VTWM.js"
+    }
+  }
+}

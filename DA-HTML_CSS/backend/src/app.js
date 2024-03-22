@@ -1,5 +1,6 @@
 import express from "express";
 import authorRouter from "./routers/auth.js";
+import productRouter from "./routers/product.js";
 import { connectDB } from "../config/db";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -17,5 +18,6 @@ app.use(morgan("tiny"));
 connectDB("mongodb://localhost:27017/xuongnodejs");
 //router
 app.use("/api/v1", authorRouter);
+app.use("/api/v1", productRouter);
 //
 export const viteNodeApp = app;

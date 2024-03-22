@@ -10,7 +10,7 @@ export const getAllProducts = async (): Promise<IProduct[]> => {
   }
 };
 
-export const getProduct = async (id: string | number) => {
+export const getProduct = async (id: string) => {
   try {
     const response = await instance.get(`/products/${id}`);
     return response.data;

@@ -1,8 +1,12 @@
 import { IProduct } from "@/interfaces/product";
 import { getAllProducts } from "@/services/products";
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 
-const New = () => {
+type ProductListProp = {
+  featured?: boolean;
+};
+const New = ({ featured }: ProductListProp) => {
   const {
     data: products,
     isLoading,
@@ -11,7 +15,11 @@ const New = () => {
     queryKey: ["PRODUCTs_KEY"],
     queryFn: getAllProducts,
   });
-  if (isLoading) return <p>Loading...</p>;
+  const filterredProducts = featured
+    ? products?.filter((product: IProduct) => product?.featured == featured)
+    : products;
+
+  if (isLoading) return <h3 className="text-center">Loading...</h3>;
   if (isError) return <p>error</p>;
   if (!Array.isArray(products)) {
     return <p> console.error();</p>;
@@ -28,7 +36,7 @@ const New = () => {
           </div>
           <div className="section-body">
             <div className="product-list">
-              {products?.map((product: IProduct, index: number) => {
+              {filterredProducts?.map((product: IProduct, index: number) => {
                 return (
                   <div key={index} className="product-item">
                     <div className="product-image">
@@ -37,7 +45,7 @@ const New = () => {
                         alt="#"
                         className="product__thumbnail"
                       />
-                      <span className="product-sale">{product?.discount}</span>
+                      <span className="product-sale">{product?.discount}%</span>
                     </div>
                     <div className="product-info">
                       <h3 className="product__name">
@@ -51,7 +59,7 @@ const New = () => {
                       <div className="product-price">
                         <span className="product-price__new">
                           {product?.price -
-                            product?.price * (product?.discount / 100)}
+                            product?.price * (product?.discount / 100)}{" "}
                         </span>
                         <del className="product-price__old">
                           {product?.price}
@@ -60,9 +68,12 @@ const New = () => {
                     </div>
                     <div className="product-actions">
                       <button className="btn product-action__quickview">
-                        <a href="detail.html" className="product-action__link">
+                        <Link
+                          to={`/shop/detail/${product._id}`}
+                          className="product-action__link"
+                        >
                           Quick View
-                        </a>
+                        </Link>
                       </button>
                       <button className="btn product-action__addtocart">
                         <a href="cart.html" className="product-action__link">
@@ -78,132 +89,6 @@ const New = () => {
                   </div>
                 );
               })}
-              {/*End .product-item*/}
-              <div className="product-item">
-                <div className="product-image">
-                  <img
-                    src="https://picsum.photos/id/133/300/300"
-                    alt="#"
-                    className="product__thumbnail"
-                  />
-                  <span className="product-new">New</span>
-                </div>
-                <div className="product-info">
-                  <h3 className="product__name">
-                    <a href="#" className="product__link">
-                      Leviosa
-                    </a>
-                  </h3>
-                  <a href="#" className="product__category">
-                    Stylish cafe chair
-                  </a>
-                  <div className="product-price">
-                    <span className="product-price__new">2.500.000đ</span>
-                    <del className="product-price__old" />
-                  </div>
-                </div>
-                <div className="product-actions">
-                  <button className="btn product-action__quickview">
-                    <a href="detail.html" className="product-action__link">
-                      Quick View
-                    </a>
-                  </button>
-                  <button className="btn product-action__addtocart">
-                    <a href="cart.html" className="product-action__link">
-                      Add to Cart
-                    </a>
-                  </button>
-                  <div className="product-actions-more">
-                    <span className="product-action__share">Share</span>
-                    <span className="product-action__compare">Compare</span>
-                    <span className="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
-              {/*End .product-item*/}
-              <div className="product-item">
-                <div className="product-image">
-                  <img
-                    src="https://picsum.photos/id/123/300/300"
-                    alt="#"
-                    className="product__thumbnail"
-                  />
-                  <span className="product-sale">-50%</span>
-                </div>
-                <div className="product-info">
-                  <h3 className="product__name">
-                    <a href="#" className="product__link">
-                      Lolito
-                    </a>
-                  </h3>
-                  <a href="#" className="product__category">
-                    Luxury big sofa
-                  </a>
-                  <div className="product-price">
-                    <span className="product-price__new">7.000.000đ</span>
-                    <del className="product-price__old">14.000.000đ</del>
-                  </div>
-                </div>
-                <div className="product-actions">
-                  <button className="btn product-action__quickview">
-                    <a href="detail.html" className="product-action__link">
-                      Quick View
-                    </a>
-                  </button>
-                  <button className="btn product-action__addtocart">
-                    <a href="cart.html" className="product-action__link">
-                      Add to Cart
-                    </a>
-                  </button>
-                  <div className="product-actions-more">
-                    <span className="product-action__share">Share</span>
-                    <span className="product-action__compare">Compare</span>
-                    <span className="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
-              {/*End .product-item*/}
-              <div className="product-item">
-                <div className="product-image">
-                  <img
-                    src="https://picsum.photos/id/312/300/300"
-                    alt="#"
-                    className="product__thumbnail"
-                  />
-                  <span className="product-new">New</span>
-                </div>
-                <div className="product-info">
-                  <h3 className="product__name">
-                    <a href="#" className="product__link">
-                      Respira
-                    </a>
-                  </h3>
-                  <a href="#" className="product__category">
-                    Outdoor bar table and stool
-                  </a>
-                  <div className="product-price">
-                    <span className="product-price__new">5.000.000</span>
-                    <del className="product-price__old" />
-                  </div>
-                </div>
-                <div className="product-actions">
-                  <button className="btn product-action__quickview">
-                    <a href="detail.html" className="product-action__link">
-                      Quick View
-                    </a>
-                  </button>
-                  <button className="btn product-action__addtocart">
-                    <a href="cart.html" className="product-action__link">
-                      Add to Cart
-                    </a>
-                  </button>
-                  <div className="product-actions-more">
-                    <span className="product-action__share">Share</span>
-                    <span className="product-action__compare">Compare</span>
-                    <span className="product-action__like">Like</span>
-                  </div>
-                </div>
-              </div>
               {/*End .product-item*/}
             </div>
           </div>

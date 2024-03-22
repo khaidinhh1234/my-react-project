@@ -1,19 +1,10 @@
-import {
-  Banner,
-  Blog,
-  Footer,
-  Header,
-  New,
-  Services,
-  Shop,
-} from "@/components";
+import { Banner, Blog, New, Services, Shop } from "@/components";
 
 const HomePage1 = () => {
   return (
     <div>
-      <Header />
       <Banner />
-      <New />
+      <New featured={true} />
 
       <div className="container">
         <hr />
@@ -21,7 +12,6 @@ const HomePage1 = () => {
       <Shop />
       <Blog />
       <Services />
-      <Footer />
     </div>
   );
 };

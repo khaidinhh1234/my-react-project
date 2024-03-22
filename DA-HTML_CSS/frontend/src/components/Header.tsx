@@ -1,6 +1,5 @@
-import { getAllProducts } from "@/services/products";
-import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { IconSearch, IconUser, IconWishlist, Iconcart, Logo } from "@/Icon";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,9 +8,9 @@ const Header = () => {
       <header className="header">
         <div className="container">
           <div className="header-inner">
-            <a href="#" className="header__logo">
-              <img src="src/assets/images/logo.svg" alt="#" />
-            </a>
+            <Link to="/home" className="header__logo">
+              <img src={Logo} alt="#" />
+            </Link>
             <div className="button-mobile">
               <div className="button-mobile-bar1" />
               <div className="button-mobile-bar2" />
@@ -20,50 +19,50 @@ const Header = () => {
             <nav className="main-menu">
               <ul className="main-menu__list">
                 <li className="main-menu__item">
-                  <a href="./index.html" className="main-menu__link">
+                  <NavLink to="/" className="main-menu_link ">
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="main-menu__item">
-                  <a href="./shop.html" className="main-menu__link">
+                  <NavLink to="/shop" className="main-menu_link">
                     Shop
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="main-menu__item">
-                  <a href="#" className="main-menu__link">
+                  <NavLink to="/about" className="main-menu_link">
                     About
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="main-menu__item">
-                  <a href="#" className="main-menu__link">
+                  <NavLink to="/contact" className="main-menu_link">
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
             <div className="header-items">
               <div className="header-item-user">
                 <a href="login.html">
-                  <img src="./public/images/img1.svg" />
+                  <img src={IconUser} />
                 </a>
               </div>
               <div className="header-item-user">
                 <span>
                   <a href="#">
-                    <img src="./public/images/img2.svg" />
+                    <img src={IconSearch} />
                   </a>
                 </span>
               </div>
               <div className="header-item-user">
                 <span>
                   <a href="#">
-                    <img src="./public/images/img3.svg" />
+                    <img src={IconWishlist} />
                   </a>
                 </span>
               </div>
               <div className="header-item-user">
                 <a href="./cart.html">
-                  <img src="./public/images/img4.svg" />
+                  <img src={Iconcart} />
                 </a>
               </div>
             </div>
