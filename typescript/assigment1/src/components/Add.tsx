@@ -1,29 +1,32 @@
 import { IProduct } from "@/interfaces/product";
+import { addProduct } from "@/services/products";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
 
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Add = () => {
   const { register, handleSubmit } = useForm();
+
   const queryClient = useQueryClient();
   const mutation = useMutation({
-    mutationFn: async (product: IProduct) => {
-      const { data } = await axios.post(
-        "http://localhost:3000/products",
-        product
-      );
-      return data;
-      onSuccess: () => {
-        queryClient.invalidateQueries({
-          queryKey: ["PRODUCT_KEY"],
-        });
-      };
+    mutationFn: addProduct,
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["PRODUCT_KEY"],
+      });
     },
   });
-  const onSubmit = (product: IProduct) => {
-    mutation.mutate(product);
-    console.log(product);
+  const onSubmit = async (product: IProduct) => {
+    try {
+      await mutation.mutateAsync(product);
+      toast.success("Bạn đã thêm sản phẩm thành công");
+    } catch (error) {
+      toast.error("Bạn thêm sản phẩm lỗi ");
+    }
   };
+
   return (
     <div className="container mt-2 ">
       <div className="   border bg-info-subtle text-info-emphasis   rounded-pill  d-flex justify-content-center ">
@@ -100,7 +103,7 @@ const Add = () => {
                 id="description"
                 cols="150"
                 rows="10"
-                {...register("desciption")}
+                {...register("description")}
               ></textarea>
             </div>
           </div>
@@ -117,11 +120,19 @@ const Add = () => {
               />
             </div>
           </div>
-          <button type="submit" className="btn btn-primary  ">
-            Sign in
-          </button>
+          <div className="d-flex justify-content-center  gap-2 ">
+            <button type="submit" className="btn btn-primary w-25">
+              Thêm
+            </button>
+            <button className="btn btn-primary w-25" type="button">
+              <Link to="/" className="text-light text-decoration-none">
+                Danh sách
+              </Link>
+            </button>
+          </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };

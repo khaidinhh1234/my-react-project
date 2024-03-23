@@ -1,17 +1,40 @@
 import { IProduct } from "@/interfaces/product";
-import { getAllProducts } from "@/services/products";
-import { useQuery } from "@tanstack/react-query";
+import { deleteProduct, getAllProducts } from "@/services/products";
+import {
+  infiniteQueryOptions,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from "@tanstack/react-query";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const New = () => {
+  const queryClient = useQueryClient();
   const {
     data: products,
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ["PRODUCTs_KEY"],
+    queryKey: ["PRODUCT_KEY"],
     queryFn: getAllProducts,
   });
+
+  // //Xóa
+  const { mutate: remove } = useMutation({
+    mutationFn: deleteProduct,
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["PRODUCT_KEY"],
+      });
+    },
+  });
+
+  // toast.success("Xóa sản phẩm thành công");
+  //   toast.error("Lỗi xóa sản phẩm thành công");
+  // }
+
   if (isLoading) return <p>Loading...</p>;
   if (isError) return <p>error</p>;
 
@@ -36,7 +59,7 @@ const New = () => {
                         alt="#"
                         className="product__thumbnail"
                       />
-                      <span className="product-sale">{product?.discount}</span>
+                      <span className="product-sale">{product?.discount}%</span>
                     </div>
                     <div className="product-info">
                       <h3 className="product__name">
@@ -45,7 +68,7 @@ const New = () => {
                         </a>
                       </h3>
                       <a href="#" className="product__category">
-                        Stylish cafe chair
+                        {product.description}
                       </a>
                       <div className="product-price">
                         <span className="product-price__new">
@@ -58,20 +81,28 @@ const New = () => {
                       </div>
                     </div>
                     <div className="product-actions">
-                      <button className="btn product-action__quickview">
-                        <a href="detail.html" className="product-action__link">
-                          Quick View
-                        </a>
+                      <button
+                        className="btn product-actions__quickview"
+                        onClick={() => remove(product.id!)}
+                      >
+                        <Link to="#" className="product-actions__link bca">
+                          Xóa Sản Phẩm
+                        </Link>
                       </button>
-                      <button className="btn product-action__addtocart">
-                        <a href="cart.html" className="product-action__link">
-                          Add to Cart
-                        </a>
+                      <button className="btn product-actions__addtocart ">
+                        <Link
+                          to={`/editproduct/${product.id!}`}
+                          className="product-actions__link abc"
+                        >
+                          Sửa Sản Phẩm
+                        </Link>
                       </button>
                       <div className="product-actions-more">
-                        <span className="product-action__share">Share</span>
-                        <span className="product-action__compare">Compare</span>
-                        <span className="product-action__like">Like</span>
+                        <span className="product-actions__share">Share</span>
+                        <span className="product-actions__compare">
+                          Compare
+                        </span>
+                        <span className="product-actions__like">Like</span>
                       </div>
                     </div>
                   </div>

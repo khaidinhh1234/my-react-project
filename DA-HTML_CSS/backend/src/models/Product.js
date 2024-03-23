@@ -24,7 +24,7 @@ const productSchema = new mongoose.Schema(
       type: String,
     },
     gallery: {
-      typy: String,
+      typy: Array,
     },
     description: {
       type: String,

@@ -35,55 +35,59 @@ const New = ({ featured }: ProductListProp) => {
             <h2 className="section-heading__title">New</h2>
           </div>
           <div className="section-body">
-            <div className="product-list">
+            <div className="products-list">
               {filterredProducts?.map((product: IProduct, index: number) => {
                 return (
-                  <div key={index} className="product-item">
-                    <div className="product-image">
+                  <div key={index} className="products-item">
+                    <div className="products-image">
                       <img
                         src={product?.image}
                         alt="#"
-                        className="product__thumbnail"
+                        className="products__thumbnail"
                       />
-                      <span className="product-sale">{product?.discount}%</span>
+                      <span className="products-sale">
+                        {product?.discount}%
+                      </span>
                     </div>
-                    <div className="product-info">
-                      <h3 className="product__name">
-                        <a href="#" className="product__link">
+                    <div className="products-info">
+                      <h3 className="products__name">
+                        <a href="#" className="products__link">
                           {product.name}
                         </a>
                       </h3>
-                      <a href="#" className="product__category">
+                      <a href="#" className="products__category">
                         Stylish cafe chair
                       </a>
-                      <div className="product-price">
-                        <span className="product-price__new">
+                      <div className="products-price">
+                        <span className="products-price__new">
                           {product?.price -
                             product?.price * (product?.discount / 100)}{" "}
                         </span>
-                        <del className="product-price__old">
+                        <del className="products-price__old">
                           {product?.price}
                         </del>
                       </div>
                     </div>
-                    <div className="product-actions">
-                      <button className="btn product-action__quickview">
+                    <div className="products-actions">
+                      <button className="btn products-action__quickview">
                         <Link
                           to={`/shop/detail/${product._id}`}
-                          className="product-action__link"
+                          className="products-action__link"
                         >
                           Quick View
                         </Link>
                       </button>
-                      <button className="btn product-action__addtocart">
-                        <a href="cart.html" className="product-action__link">
+                      <button className="btn products-action__addtocart">
+                        <a href="cart.html" className="products-action__link">
                           Add to Cart
                         </a>
                       </button>
-                      <div className="product-actions-more">
-                        <span className="product-action__share">Share</span>
-                        <span className="product-action__compare">Compare</span>
-                        <span className="product-action__like">Like</span>
+                      <div className="products-actions-more">
+                        <span className="products-action__share">Share</span>
+                        <span className="products-action__compare">
+                          Compare
+                        </span>
+                        <span className="products-action__like">Like</span>
                       </div>
                     </div>
                   </div>
